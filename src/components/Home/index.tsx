@@ -1,0 +1,39 @@
+import  Section  from '../Section'
+import * as S from './styles'
+import LinkedInImg from '../../../assets/img/LinkedIn_icon.png'
+import GithubIconImg from '../../../assets/img/github-white-icon.png'
+
+const HomeSection = () => (
+  <Section background="black">
+      <div>
+      <S.TitleContainer>
+        <h2>
+          Desenvolvedor <br />
+          Fullstack
+        </h2>
+        <h1>Gabriel Machado Coutinho</h1>
+      </S.TitleContainer>
+      <S.Phrase>Da ideia ao código: criando experiências completas.</S.Phrase>
+      <S.ButtonList>
+        <li>
+          <a href="#">
+            <S.ImgContainer type="github">
+              <img src={GithubIconImg.src} alt="github" />
+              <p>GitHub</p>
+            </S.ImgContainer>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <S.ImgContainer type="linkedin">
+              <img src={LinkedInImg.src} alt="linkedin" />
+              <p>LinkedIn</p>
+            </S.ImgContainer>
+          </a>
+        </li>
+      </S.ButtonList>
+      </div>
+  </Section>
+)
+
+export default HomeSection
