@@ -1,7 +1,7 @@
 import HomeSection from '@/components/Home'
 import { GlobalCss } from './styles'
 import AboutMe from '@/components/AboutMe'
-import { SectionContainer } from '@/components/Section/styles'
+import ProjectsList from '@/components/ProjectsList'
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <GlobalCss />
       <HomeSection />
       <AboutMe />
+      <ProjectsList />
     </>
   )
 }

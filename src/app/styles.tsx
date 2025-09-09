@@ -26,7 +26,7 @@ export const GlobalCss = createGlobalStyle`
     text-decoration: none;
   }
 
-  h1, h2, h3{
+  h1, h2, h3, h4{
     font-family: Montserrat, sans-serif;
   }
 
