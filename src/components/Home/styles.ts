@@ -4,7 +4,7 @@ import { colors } from '@/app/styles'
 import styled from 'styled-components'
 
 interface ImgContainerProps {
-  type: 'github' | 'linkedin'
+  type: 'black' | 'blue'
 }
 
 
@@ -47,7 +47,7 @@ export const ButtonList = styled.ul`
 export const ImgContainer = styled.div<ImgContainerProps>`
   display: flex;
   background-color: ${({ type }) =>
-    type === 'linkedin' ? '#2961aaff' : type === 'github' ? '#2d2d2d' : '#aaa'};
+    type === 'blue' ? '#2961aaff' : type === 'black' ? '#2d2d2d' : '#aaa'};
   align-items: center;
   gap: 20px;
   border-radius: 300px;

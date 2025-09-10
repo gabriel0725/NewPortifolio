@@ -10,22 +10,82 @@ const projects: Project[] = [
   {
     id: 1,
     image: 'https://placehold.co/380',
-    title: 'titulo',
-    description: 'descrição blabla blbl',
+    title: 'Efood',
+    description: 'descrição 1',
     tags: ['Tag 1', 'Tag texto grande', 'Tag media', 'Tag media']
   },
   {
     id: 2,
     image: 'https://placehold.co/380',
-    title: 'titulo 2',
-    description: 'descrição diferente',
+    title: 'Bikcraft',
+    description: 'descrição 2',
     tags: ['Tag A', 'Tag B', 'aaaaaa']
   },
   {
     id: 3,
     image: 'https://placehold.co/380',
-    title: 'mais um titulo',
-    description: 'terceira descrição',
+    title: 'Outer Wilds',
+    description: 'descrição 3',
+    tags: ['Tag X', 'Tag Y']
+  },
+  {
+    id: 4,
+    image: 'https://placehold.co/380',
+    title: 'MDN',
+    description: 'descrição 4',
+    tags: ['Tag X', 'Tag Y']
+  },
+  {
+    id: 5,
+    image: 'https://placehold.co/380',
+    title: 'Dgenerus',
+    description: 'descrição 5',
+    tags: ['Tag X', 'Tag Y']
+  },
+  {
+    id: 6,
+    image: 'https://placehold.co/380',
+    title: 'Clone Disney+',
+    description: 'descrição 6',
+    tags: ['Tag X', 'Tag Y']
+  },
+  {
+    id: 7,
+    image: 'https://placehold.co/380',
+    title: 'Sorteador de números',
+    description: 'descrição 7',
+    tags: ['Tag X', 'Tag Y']
+  }
+  ,
+  {
+    id: 8,
+    image: 'https://placehold.co/380',
+    title: 'Landing page',
+    description: 'descrição 8',
+    tags: ['Tag X', 'Tag Y']
+  }
+  ,
+  {
+    id: 9,
+    image: 'https://placehold.co/380',
+    title: 'todo-list',
+    description: 'descrição 9',
+    tags: ['Tag X', 'Tag Y']
+  }
+  ,
+  {
+    id: 10,
+    image: 'https://placehold.co/380',
+    title: 'galeria de fotos',
+    description: 'descrição 10',
+    tags: ['Tag X', 'Tag Y']
+  }
+  ,
+  {
+    id: 11,
+    image: 'https://placehold.co/380',
+    title: 'Loja de roupas',
+    description: 'descrição 11',
     tags: ['Tag X', 'Tag Y']
   }
 ]

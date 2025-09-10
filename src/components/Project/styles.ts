@@ -12,7 +12,7 @@ export const ProjectContainer = styled.div`
   ul {
     display: flex;
     flex-wrap: nowrap;
-    gap: 40px;
+    gap: 10px;
     padding: 0;
 
   }

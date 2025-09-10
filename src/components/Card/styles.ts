@@ -4,22 +4,43 @@ import styled from 'styled-components'
 export const Container = styled.div`
   background-color: transparent;
   border-radius: 8px;
-  cursor: pointer;
+  width: 280px;
+  height: 380px;
+  transition: transform 0.4s;
+  text-align: left;
 
+  /* aplica efeito no hover E no slide ativo */
   &:hover {
-    transform: scale(1.03);
-    opacity: 1;
+    transform: scale(1.12);
+    z-index: 9;
 
     .description {
-      display: block;
+      opacity: .7;
+      visibility: visible;
     }
 
     footer .tags {
-      display: flex;
+      opacity: .7;
+      visibility: visible;
+    }
+  }
+
+  .swiper-slide-active & {
+    transform: scale(1.22);
+    z-index: 10;
+
+    .description {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    footer .tags {
+      opacity: 1;
+      visibility: visible;
     }
 
     img {
-      box-shadow: 1px 2px 5px 1px rgb(255 255 255 / 0.8);
+      box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 0.8);
     }
   }
 
@@ -32,27 +53,36 @@ export const Container = styled.div`
   }
 
   .description {
-    display: block;
     padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.4s,
+      visibility 0.4s;
 
     p {
       padding-bottom: 10px;
       font-weight: 600;
-      font-size: 1.25rem;
+      font-size: 1.15rem;
     }
 
     h4 {
       font-weight: 400;
       text-transform: uppercase;
-      opacity: 70%;
-      font-size: 0.875rem;
+      opacity: 0.7;
+      font-size: 0.775rem;
     }
   }
 
   footer .tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-self: left;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-self: left;
+    transition:
+      opacity 0.4s,
+      visibility 0.4s;
   }
 `

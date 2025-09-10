@@ -17,7 +17,7 @@ const HomeSection = () => (
       <S.ButtonList>
         <li>
           <a href="#">
-            <S.ImgContainer type="github">
+            <S.ImgContainer type="black">
               <img src={GithubIconImg.src} alt="github" />
               <p>GitHub</p>
             </S.ImgContainer>
@@ -25,7 +25,7 @@ const HomeSection = () => (
         </li>
         <li>
           <a href="#">
-            <S.ImgContainer type="linkedin">
+            <S.ImgContainer type="blue">
               <img src={LinkedInImg.src} alt="linkedin" />
               <p>LinkedIn</p>
             </S.ImgContainer>

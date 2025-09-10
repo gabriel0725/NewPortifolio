@@ -7,13 +7,17 @@ export const SectionContainer = styled.section<Omit<Props, 'title'>>`
   text-align: center;
   background-color: ${(props) =>
     props.background === 'black' ? colors.black : colors.lightBlack};
+
+  .swiper {
+    overflow: visible;
+  }
 `
 
 export const DivContainer = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
-min-height: 100vh;
+  min-height: 100vh;
 `
 
 export const Title = styled.h3`
