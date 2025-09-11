@@ -1,5 +1,5 @@
 'use client'
-import ExternalLinkImg from '../../../assets/img/external_link_icon2.png'
+import ProjectsImg from '../../../assets/img/projects_icon.png'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
@@ -65,7 +65,7 @@ const ProjectCarousel = () => {
         <div className="btnProjetos">
           <a href="#">
             <ImgContainer type="black">
-              <img src={ExternalLinkImg.src} alt="projetos" />
+              <img src={ProjectsImg.src} alt="projetos" />
               <p>Projetos</p>
             </ImgContainer>
           </a>

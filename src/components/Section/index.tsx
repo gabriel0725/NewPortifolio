@@ -9,16 +9,12 @@ export type Props = {
 
 const Section = ({ title, background, children }: Props) => (
   <S.SectionContainer background={background}>
-    <>
-
-      <S.DivContainer className="container">
-        <div>
-          {title && <S.Title>{title}</S.Title>}
-          {children}
-        </div>
-
-      </S.DivContainer>
-    </>
+    <S.DivContainer className="container">
+      <div>
+        {title && <S.Title>{title}</S.Title>}
+        {children}
+      </div>
+    </S.DivContainer>
   </S.SectionContainer>
 )
 

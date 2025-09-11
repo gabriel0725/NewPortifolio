@@ -3,6 +3,7 @@
 import styled from 'styled-components'
 import 'swiper/css/pagination'
 import { colors } from '@/app/styles'
+import { ImgContainer } from '../Home/styles'
 
 export const CarouselContainer = styled.section`
   text-align: center;
@@ -51,6 +52,10 @@ export const ProjectContainer = styled.div`
     transform: translateX(-50%);
     position: absolute;
     bottom: var(--swiper-pagination-bottom, 60px);
+
+    ${ImgContainer} {
+      border: 1px solid ${colors.blue};
+    }
   }
 `
 export const StyledPagination = styled.div`
