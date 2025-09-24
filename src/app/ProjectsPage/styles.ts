@@ -1,7 +1,12 @@
 'use client'
 
 import { Container } from '@/components/Card/styles'
+import Section from '@/components/Section'
 import styled from 'styled-components'
+
+export const AllProjectsSection = styled(Section)`
+  padding: 60px 0;
+`
 
 export const ProjectsList = styled.ul`
   display: grid;
@@ -27,7 +32,7 @@ export const ProjectsList = styled.ul`
       .description{
         opacity: 1;
       }
-      
+
       footer .tags {
         opacity: 1;
       }

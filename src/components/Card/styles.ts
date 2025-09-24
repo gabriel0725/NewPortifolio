@@ -14,6 +14,8 @@ export const Container = styled.div`
   a {
     color: ${colors.white};
     position: relative;
+    justify-content: space-between;
+    display: flex;
   }
 
   a::after {
@@ -30,14 +32,15 @@ export const Container = styled.div`
     white-space: nowrap;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transition:
+      opacity 0.2s ease-in-out,
+      transform 0.2s ease-in-out;
   }
 
   a:hover::after {
     opacity: 1;
     transform: translateX(-50%) translateY(-10px);
   }
-
 
   &:hover {
     transform: scale(1.12);
@@ -113,5 +116,10 @@ export const Container = styled.div`
     transition:
       opacity 0.4s,
       visibility 0.4s;
+  }
+
+  .redirectImg {
+    width: 35px;
+    height: 35px;
   }
 `

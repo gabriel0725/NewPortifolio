@@ -66,8 +66,10 @@ const ProjectCarousel = () => {
             </ImgContainer>
           </a>
         </div>
+
       </ProjectContainer>
       <StyledPagination className="swiper-pagination"></StyledPagination>
+
     </CarouselContainer>
   )
 }

@@ -1,6 +1,8 @@
 import { Container } from './styles'
 import Tag from '../Tag'
 
+import externalLinkImg from '../../../assets/img/external_link_icon2.png'
+
 export type CardProps = {
   image: string
   title: string
@@ -22,8 +24,11 @@ const Card = ({ image, title, description, tags, links, githubLink, siteLink }: 
         </header>
         <div className="description">
             <a href={githubLink} target='_blank' data-name="Ir para o Github">
-            <p>{description}</p>
-            <h4>{title}</h4>
+            <div>
+              <p>{description}</p>
+              <h4>{title}</h4>
+            </div>
+            <img className='redirectImg' src={externalLinkImg.src} alt="" />
           </a>
         </div>
         <footer>

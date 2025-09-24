@@ -44,7 +44,6 @@ export const ProjectContainer = styled.div`
   text-align: left;
   min-height: 100vh;
   align-content: center;
-  justify-items: center;
 
   .btnProjetos {
     width: 220px;
