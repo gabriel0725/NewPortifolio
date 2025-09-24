@@ -18,22 +18,24 @@ export const DivContainer = styled.div`
   display: flex;
   justify-content: center;
   min-height: 100vh;
-`
 
-export const Title = styled.h3`
-  font-weight: bold;
-  font-size: 34px;
-  letter-spacing: 0.05em;
-  color: ${colors.white};
-  margin-bottom: 50px;
-  text-transform: uppercase;
+  h3 {
+    font-weight: bold;
+    font-size: 34px;
+    letter-spacing: 0.05em;
+    color: ${colors.white};
+    margin-bottom: 50px;
+    text-transform: uppercase;
 
-  &:after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: ${colors.white};
-    margin: 8px auto;
+    &:after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: ${colors.white};
+      margin: 8px auto;
+    }
   }
 `
+
+

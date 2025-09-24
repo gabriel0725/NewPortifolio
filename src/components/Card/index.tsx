@@ -6,10 +6,43 @@ export type CardProps = {
   title: string
   description: string
   tags: string[]
+  links: boolean
+  githubLink?: string
+  siteLink?: string
 }
 
-const Card = ({ image, title, description, tags }: CardProps) => (
-  <Container>
+const Card = ({ image, title, description, tags, links, githubLink, siteLink }: CardProps) => {
+  if (links === true) {
+    return (
+      <Container>
+        <header>
+          <a href={siteLink} target="_blank" data-name="Ir para o site">
+            <img src={image} alt={title} />
+          </a>
+        </header>
+        <div className="description">
+            <a href={githubLink} target='_blank' data-name="Ir para o Github">
+            <p>{description}</p>
+            <h4>{title}</h4>
+          </a>
+        </div>
+        <footer>
+          <div>
+            <ul className="tags">
+              {tags.map((tag, index) => (
+                <li key={index}>
+                  <Tag>{tag}</Tag>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </footer>
+      </Container>
+    )
+  }
+
+  return (
+    <Container>
       <header>
         <img src={image} alt={title} />
       </header>
@@ -17,18 +50,19 @@ const Card = ({ image, title, description, tags }: CardProps) => (
         <p>{description}</p>
         <h4>{title}</h4>
       </div>
-      <footer >
+      <footer>
         <div>
           <ul className="tags">
-          {tags.map((tag, index) => (
-            <li key={index}>
-              <Tag>{tag}</Tag>
-            </li>
-          ))}
-        </ul>
+            {tags.map((tag, index) => (
+              <li key={index}>
+                <Tag>{tag}</Tag>
+              </li>
+            ))}
+          </ul>
         </div>
       </footer>
-  </Container>
-)
+    </Container>
+  )
+}
 
 export default Card

@@ -5,13 +5,14 @@ export type Props = {
   title?: String
   background: 'black' | 'gray'
   children: JSX.Element
+  className?: String
 }
 
-const Section = ({ title, background, children }: Props) => (
-  <S.SectionContainer background={background}>
+const Section = ({ title, background, children, className }: Props) => (
+  <S.SectionContainer background={background} className={className}>
     <S.DivContainer className="container">
       <div>
-        {title && <S.Title>{title}</S.Title>}
+        {title && <h3>{title}</h3>}
         {children}
       </div>
     </S.DivContainer>

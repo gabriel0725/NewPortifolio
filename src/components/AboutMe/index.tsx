@@ -1,10 +1,11 @@
-import Section from '../Section'
+import { Icon } from '@iconify/react'
+
 import * as S from './styles'
 
 import DonwloadIconImg from '../../../assets/img/download_icon.png'
 
 const AboutMe = () => (
-  <Section background="gray" title="Sobre mim">
+  <S.SectionAbout background="gray" title="Sobre mim">
     <>
       <S.AboutMeContainer>
         <p>
@@ -31,12 +32,71 @@ const AboutMe = () => (
           Com certeza podemos criar algo incrível juntos!
         </p>
       </S.AboutMeContainer>
+
+      <S.StacksContainer>
+        <h4>Competencias</h4>
+
+        <div>
+          <S.IconsList>
+            <li data-name="HTML">
+              <Icon icon="vscode-icons:file-type-html" width="40" height="40" />
+            </li>
+            <li data-name="CSS">
+              <Icon icon="vscode-icons:file-type-css2" width="40" height="40" />
+            </li>
+            <li data-name="JAVASCRIP">
+              <Icon icon="logos:javascript" width="40" height="40" />
+            </li>
+            <li data-name="TYPESCRIPT">
+              <Icon
+                icon="vscode-icons:file-type-typescript-official"
+                width="40"
+                height="40"
+              />
+            </li>
+            <li data-name="REACT JS">
+              <Icon icon="logos:react" width="40" height="40" />
+            </li>
+            <li data-name="NEXT JS">
+              <Icon icon="logos:nextjs-icon" width="40" height="40" />
+            </li>
+            <li data-name="REDUX">
+              <Icon icon="logos:redux" width="40" height="40" />
+            </li>
+            <li data-name="STYLED COMPONENTS">
+              <Icon
+                icon="devicon:styledcomponents-wordmark"
+                width="40"
+                height="40"
+              />
+            </li>
+            <li data-name="gulp">
+              <Icon icon="vscode-icons:file-type-gulp" width="40" height="40" />
+            </li>
+            <li data-name="SASS">
+              <Icon icon="devicon:sass" width="40" height="40" />
+            </li>
+            <li data-name="CYPRESS">
+              <Icon icon="devicon:cypressio" width="40" height="40" />
+            </li>
+            <li data-name="BOOTSTRAP">
+              <Icon icon="devicon:bootstrap" width="40" height="40" />
+            </li>
+            <li data-name="GIT">
+              <Icon icon="vscode-icons:file-type-git" width="40" height="40" />
+            </li>
+            <li data-name="JAVA">
+              <Icon icon="logos:java" width="40" height="40" />
+            </li>
+          </S.IconsList>
+        </div>
+      </S.StacksContainer>
       <S.BtnCV href="#">
         <img src={DonwloadIconImg.src} alt="" />
         <p>CV Download</p>
       </S.BtnCV>
     </>
-  </Section>
+  </S.SectionAbout>
 )
 
 export default AboutMe

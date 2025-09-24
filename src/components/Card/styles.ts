@@ -1,4 +1,5 @@
 'use client'
+import { colors } from '@/app/styles'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -8,19 +9,47 @@ export const Container = styled.div`
   height: 380px;
   transition: transform 0.4s;
   text-align: left;
+  position: relative;
 
-  /* aplica efeito no hover E no slide ativo */
+  a {
+    color: ${colors.white};
+    position: relative;
+  }
+
+  a::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    background: ${colors.black};
+    color: ${colors.white};
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  a:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+  }
+
+
   &:hover {
     transform: scale(1.12);
     z-index: 9;
 
     .description {
-      opacity: .7;
+      opacity: 0.7;
       visibility: visible;
     }
 
     footer .tags {
-      opacity: .7;
+      opacity: 0.7;
       visibility: visible;
     }
   }

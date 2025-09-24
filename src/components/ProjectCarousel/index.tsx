@@ -8,12 +8,7 @@ import Card from '../Card'
 import projects from '@/Mock/Projects'
 import { CarouselContainer, ProjectContainer, StyledPagination } from './styles'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import {
-  EffectCoverflow,
-  Keyboard,
-  Mousewheel,
-  Pagination
-} from 'swiper/modules'
+import { EffectCoverflow, Keyboard, Pagination } from 'swiper/modules'
 import { useRef } from 'react'
 import { ImgContainer } from '../Home/styles'
 
@@ -54,6 +49,7 @@ const ProjectCarousel = () => {
               onClick={() => swiperRef.current?.slideToLoop(index)} // centraliza no clique
             >
               <Card
+                links={false}
                 image={project.image}
                 title={project.title}
                 description={project.description}
@@ -63,7 +59,7 @@ const ProjectCarousel = () => {
           ))}
         </Swiper>
         <div className="btnProjetos">
-          <a href="#">
+          <a href="/ProjectsPage">
             <ImgContainer type="black">
               <img src={ProjectsImg.src} alt="projetos" />
               <p>Projetos</p>
