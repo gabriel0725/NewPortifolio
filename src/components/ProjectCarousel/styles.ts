@@ -2,7 +2,7 @@
 
 import styled from 'styled-components'
 import 'swiper/css/pagination'
-import { colors } from '@/app/styles'
+import { breakpoints, colors } from '@/app/styles'
 import { ImgContainer } from '../Home/styles'
 
 export const CarouselContainer = styled.section`
@@ -13,6 +13,10 @@ export const CarouselContainer = styled.section`
   .swiper {
     overflow: visible;
     text-align: -webkit-center;
+  }
+
+  .swiper-3d .swiper-slide {
+    transform-style: initial;
   }
 
   h3 {
@@ -33,6 +37,13 @@ export const CarouselContainer = styled.section`
       height: 3px;
       background: ${colors.white};
       margin: 8px auto;
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    h3 {
+      font-size: 28px;
+      top: 32px;
     }
   }
 `
@@ -57,6 +68,17 @@ export const ProjectContainer = styled.div`
     }
   }
 `
+
+export const ImgBtn = styled(ImgContainer)`
+  @media (max-width: ${breakpoints.tablet}) {
+    height: 50px;
+
+    p {
+      display: block;
+    }
+  }
+`
+
 export const StyledPagination = styled.div`
   .swiper-pagination-bullet {
     background: ${colors.blue};

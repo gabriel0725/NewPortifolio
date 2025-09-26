@@ -1,5 +1,5 @@
 'use client'
-import { colors } from '@/app/styles'
+import { breakpoints, colors } from '@/app/styles'
 import styled from 'styled-components'
 import { Props } from '.'
 
@@ -34,6 +34,12 @@ export const DivContainer = styled.div`
       height: 3px;
       background: ${colors.white};
       margin: 8px auto;
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    h3 {
+      font-size: 28px;
     }
   }
 `

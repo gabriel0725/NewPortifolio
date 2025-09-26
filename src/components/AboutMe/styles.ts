@@ -1,5 +1,5 @@
 'use client'
-import { colors } from '@/app/styles'
+import { breakpoints, colors } from '@/app/styles'
 import styled from 'styled-components'
 import Section from '../Section'
 import { DivContainer } from '../Section/styles'
@@ -15,8 +15,12 @@ export const SectionAbout = styled(Section)`
 export const AboutMeContainer = styled.div`
   P {
     font-size: 24px;
-    text-align: left;
     text-align: justify;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      font-size: 18px;
+      text-align: left;
+    }
   }
 
   span {
@@ -94,8 +98,8 @@ export const IconsList = styled.ul`
       box-shadow:
     /* Sombra externa no hover: mais escura e com maior espalhamento. */
         0 4px 20px rgba(0, 0, 0, 0.8),
-        /* Sombra interna superior no hover: o brilho fica mais forte. */
-        inset 0 6px 12px rgba(255, 255, 255, 0.08),
+        /* Sombra interna superior no hover: o brilho fica mais forte. */ inset
+          0 6px 12px rgba(255, 255, 255, 0.08),
         /* Sombra interna inferior no hover: a sombra interna fica mais escura. */
           inset 0 -8px 16px rgba(0, 0, 0, 0.7);
     }

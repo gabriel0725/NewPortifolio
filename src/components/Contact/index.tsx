@@ -13,7 +13,7 @@ const Contact = () => (
       </a>
       <a href="mailto:gabriel.gmcontato@gmail.com" target="_blank">
         <img src={EmailImg.src} alt="email" />
-        gabriel.gmcontato@gmail.com
+        <span>gabriel.gmcontato@gmail.com</span>
       </a>
       <a href="#" target="_blank">
         <img src={PhoneImg.src} alt="whatsapp" />

@@ -1,4 +1,4 @@
-import { Container } from './styles'
+import { CardContainer } from './styles'
 import Tag from '../Tag'
 
 import externalLinkImg from '../../../assets/img/external_link_icon2.png'
@@ -16,7 +16,7 @@ export type CardProps = {
 const Card = ({ image, title, description, tags, links, githubLink, siteLink }: CardProps) => {
   if (links === true) {
     return (
-      <Container>
+      <CardContainer>
         <header>
           <a href={siteLink} target="_blank" data-name="Ir para o site">
             <img src={image} alt={title} />
@@ -42,12 +42,12 @@ const Card = ({ image, title, description, tags, links, githubLink, siteLink }: 
             </ul>
           </div>
         </footer>
-      </Container>
+      </CardContainer>
     )
   }
 
   return (
-    <Container>
+    <CardContainer>
       <header>
         <img src={image} alt={title} />
       </header>
@@ -66,7 +66,7 @@ const Card = ({ image, title, description, tags, links, githubLink, siteLink }: 
           </ul>
         </div>
       </footer>
-    </Container>
+    </CardContainer>
   )
 }
 

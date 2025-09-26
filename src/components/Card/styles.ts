@@ -1,8 +1,8 @@
 'use client'
-import { colors } from '@/app/styles'
+import { breakpoints, colors } from '@/app/styles'
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const CardContainer = styled.div`
   background-color: transparent;
   border-radius: 8px;
   width: 280px;
@@ -121,5 +121,9 @@ export const Container = styled.div`
   .redirectImg {
     width: 35px;
     height: 35px;
+  }
+
+  @media(max-width: ${breakpoints.desktop}) {
+    width: 200px;
   }
 `

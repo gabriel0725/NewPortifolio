@@ -1,8 +1,9 @@
 'use client'
 
-import { Container } from '@/components/Card/styles'
+import { CardContainer } from '@/components/Card/styles'
 import Section from '@/components/Section'
 import styled from 'styled-components'
+import { breakpoints } from '../styles'
 
 export const AllProjectsSection = styled(Section)`
   padding: 60px 0;
@@ -17,7 +18,7 @@ export const ProjectsList = styled.ul`
     margin: 30px 0;
   }
 
-  ${Container} {
+  ${CardContainer} {
     .description {
       opacity: 0.7;
       visibility: visible;
@@ -36,6 +37,28 @@ export const ProjectsList = styled.ul`
       footer .tags {
         opacity: 1;
       }
+    }
+  }
+
+  @media(max-width: ${breakpoints.tablet}){
+    display: block;
+
+    .ProjectListItem {
+      margin-bottom: 60px;
+    }
+
+    ${CardContainer} {
+      width: 280px;
+
+      .description {
+      opacity: 1;
+
+    }
+
+    footer .tags {
+      opacity: .9;
+
+    }
     }
   }
 `
