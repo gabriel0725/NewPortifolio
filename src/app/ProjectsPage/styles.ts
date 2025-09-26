@@ -19,6 +19,11 @@ export const ProjectsList = styled.ul`
   }
 
   ${CardContainer} {
+
+    .imgProjectsPage{
+      height: 280px
+    }
+
     .description {
       opacity: 0.7;
       visibility: visible;
@@ -30,7 +35,7 @@ export const ProjectsList = styled.ul`
     }
 
     &:hover {
-      .description{
+      .description {
         opacity: 1;
       }
 
@@ -40,7 +45,7 @@ export const ProjectsList = styled.ul`
     }
   }
 
-  @media(max-width: ${breakpoints.tablet}){
+  @media (max-width: ${breakpoints.tablet}) {
     display: block;
 
     .ProjectListItem {
@@ -51,14 +56,12 @@ export const ProjectsList = styled.ul`
       width: 280px;
 
       .description {
-      opacity: 1;
+        opacity: 1;
+      }
 
-    }
-
-    footer .tags {
-      opacity: .9;
-
-    }
+      footer .tags {
+        opacity: 0.9;
+      }
     }
   }
 `

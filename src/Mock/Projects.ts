@@ -1,3 +1,16 @@
+import efoodImg from '../../assets/img/efood.png'
+import bikcraftImg from '../../assets/img/bikcraft.png'
+import outerwildsImg from '../../assets/img/outerwilds.png'
+import mdnImg from '../../assets/img/MDN.png'
+import dgenerusImg from '../../assets/img/Dgenerus.png'
+import disneyImg from '../../assets/img/disney.png'
+import sorteadorImg from '../../assets/img/sorteador.png'
+import landingImg from '../../assets/img/landing.png'
+import galeriaImg from '../../assets/img/aeolian.jpg'
+import lojaroupasImg from '../../assets/img/camiseta.png'
+
+
+
 export type Project = {
   id: number
   image: string
@@ -11,7 +24,7 @@ export type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    image: 'https://placehold.co/380',
+    image: efoodImg.src,
     title: 'Efood',
     description: 'descrição 1',
     tags: ['Tag 1', 'Tag texto grande', 'Tag media', 'Tag media'],
@@ -20,7 +33,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    image: 'https://placehold.co/380',
+    image: bikcraftImg.src,
     title: 'Bikcraft',
     description: 'descrição 2',
     tags: ['Tag A', 'Tag B', 'aaaaaa'],
@@ -29,7 +42,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    image: 'https://placehold.co/380',
+    image: outerwildsImg.src,
     title: 'Outer Wilds',
     description: 'descrição 3',
     tags: ['Tag X', 'Tag Y'],
@@ -38,8 +51,8 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    image: 'https://placehold.co/380',
-    title: 'MDN',
+    image: mdnImg.src,
+    title: 'Mulheres DN',
     description: 'descrição 4',
     tags: ['Tag X', 'Tag Y'],
     githubLink: 'https://www.google.com',
@@ -47,7 +60,7 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    image: 'https://placehold.co/380',
+    image: dgenerusImg.src,
     title: 'Dgenerus',
     description: 'descrição 5',
     tags: ['Tag X', 'Tag Y'],
@@ -56,7 +69,7 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    image: 'https://placehold.co/380',
+    image: disneyImg.src,
     title: 'Clone Disney+',
     description: 'descrição 6',
     tags: ['Tag X', 'Tag Y'],
@@ -65,7 +78,7 @@ const projects: Project[] = [
   },
   {
     id: 7,
-    image: 'https://placehold.co/380',
+    image: sorteadorImg.src,
     title: 'Sorteador de números',
     description: 'descrição 7',
     tags: ['Tag X', 'Tag Y'],
@@ -75,7 +88,7 @@ const projects: Project[] = [
   ,
   {
     id: 8,
-    image: 'https://placehold.co/380',
+    image: landingImg.src,
     title: 'Landing page',
     description: 'descrição 8',
     tags: ['Tag X', 'Tag Y'],
@@ -95,7 +108,7 @@ const projects: Project[] = [
   ,
   {
     id: 10,
-    image: 'https://placehold.co/380',
+    image: galeriaImg.src,
     title: 'galeria de fotos',
     description: 'descrição 10',
     tags: ['Tag X', 'Tag Y'],
@@ -105,7 +118,7 @@ const projects: Project[] = [
   ,
   {
     id: 11,
-    image: 'https://placehold.co/380',
+    image: lojaroupasImg.src,
     title: 'Loja de roupas',
     description: 'descrição 11',
     tags: ['Tag X', 'Tag Y'],

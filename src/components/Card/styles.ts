@@ -79,9 +79,10 @@ export const CardContainer = styled.div`
   img {
     border-radius: 10px;
     width: 100%;
-    height: auto;
+    height: 280px;
     box-shadow: 0 0 0 transparent;
     transition: box-shadow 0.3s ease;
+    object-fit: cover;
   }
 
   .description {
@@ -123,7 +124,11 @@ export const CardContainer = styled.div`
     height: 35px;
   }
 
-  @media(max-width: ${breakpoints.desktop}) {
+  @media (max-width: ${breakpoints.desktop}) {
     width: 200px;
+
+    img {
+      height: 200px;
+    }
   }
 `

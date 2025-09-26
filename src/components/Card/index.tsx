@@ -19,7 +19,7 @@ const Card = ({ image, title, description, tags, links, githubLink, siteLink }: 
       <CardContainer>
         <header>
           <a href={siteLink} target="_blank" data-name="Ir para o site">
-            <img src={image} alt={title} />
+            <img className='imgProjectsPage' src={image} alt={title} />
           </a>
         </header>
         <div className="description">
