@@ -96,7 +96,7 @@ export const CardContainer = styled.div`
     p {
       padding-bottom: 10px;
       font-weight: 600;
-      font-size: 1.15rem;
+      font-size: 1rem;
     }
 
     h4 {

@@ -15,7 +15,7 @@ export const ProjectsList = styled.ul`
   gap: 30px;
 
   .ProjectListItem {
-    margin: 30px 0;
+    margin: 60px 0;
   }
 
   ${CardContainer} {
@@ -49,7 +49,7 @@ export const ProjectsList = styled.ul`
     display: block;
 
     .ProjectListItem {
-      margin-bottom: 60px;
+      margin-bottom: 130px;
     }
 
     ${CardContainer} {
