@@ -1,6 +1,7 @@
 'use client'
 import { breakpoints, colors } from '@/app/styles'
 import styled from 'styled-components'
+import { TagContainer } from '../Tag/styles'
 
 export const CardContainer = styled.div`
   background-color: transparent;
@@ -46,7 +47,8 @@ export const CardContainer = styled.div`
     transform: scale(1.12);
     z-index: 9;
 
-    .description, .description-projects-page {
+    .description,
+    .description-projects-page {
       opacity: 0.7;
       visibility: visible;
     }
@@ -61,7 +63,8 @@ export const CardContainer = styled.div`
     transform: scale(1.22);
     z-index: 10;
 
-    .description, .description-projects-page {
+    .description,
+    .description-projects-page {
       opacity: 1;
       visibility: visible;
     }
@@ -85,7 +88,8 @@ export const CardContainer = styled.div`
     object-fit: cover;
   }
 
-  .description, .description-projects-page {
+  .description,
+  .description-projects-page {
     padding: 10px 0;
     opacity: 0;
     visibility: hidden;
@@ -130,11 +134,9 @@ export const CardContainer = styled.div`
     img {
       height: 200px;
     }
+  }
 
-
-    }
-
-    .description {
+  .description {
     p {
       font-size: 0.9rem;
     }
@@ -144,5 +146,20 @@ export const CardContainer = styled.div`
     }
   }
 
+  @media (max-width: ${breakpoints.desktop}) {
+    .description, .description-projects-page {
 
+      p {
+        font-size: 1.1rem;
+      }
+
+      h4 {
+        font-size: 0.85rem;
+      }
+    }
+
+    ${TagContainer} {
+      font-size: 0.75rem;
+    }
+  }
 `

@@ -51,6 +51,11 @@ const ProjectCarousel = () => {
               spaceBetween: 10,
               effect: 'slide'
             },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+              
+            },
             1024: {
               slidesPerView: 5,
               spaceBetween: 40
