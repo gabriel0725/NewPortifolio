@@ -128,27 +128,9 @@ export const CardContainer = styled.div`
     height: 35px;
   }
 
-  @media (max-width: ${breakpoints.tablet}) {
-    width: 200px;
-
-    img {
-      height: 200px;
-    }
-  }
-
-  .description {
-    p {
-      font-size: 0.9rem;
-    }
-
-    h4 {
-      font-size: 0.55rem;
-    }
-  }
-
   @media (max-width: ${breakpoints.desktop}) {
-    .description, .description-projects-page {
-
+    .description,
+    .description-projects-page {
       p {
         font-size: 1.1rem;
       }
@@ -160,6 +142,37 @@ export const CardContainer = styled.div`
 
     ${TagContainer} {
       font-size: 0.75rem;
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 200px;
+
+    img {
+      height: 200px;
+    }
+    .description{
+      p {
+        font-size: 0.9rem;
+      }
+
+      h4 {
+        font-size: 0.55rem;
+      }
+    }
+
+    .description-projects-page {
+      p {
+        font-size: 1rem;
+      }
+
+      h4 {
+        font-size: 0.75rem;
+      }
+    }
+
+    ${TagContainer} {
+      font-size: 0.6rem;
     }
   }
 `
