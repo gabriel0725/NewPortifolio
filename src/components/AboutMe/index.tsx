@@ -4,6 +4,7 @@ import * as S from './styles'
 
 import DonwloadIconImg from '../../../assets/img/download_icon.png'
 
+
 const AboutMe = () => (
   <S.SectionAbout background="gray" title="Sobre mim">
     <>
@@ -91,8 +92,8 @@ const AboutMe = () => (
           </S.IconsList>
         </div>
       </S.StacksContainer>
-      <S.BtnCV href="#">
-        <img src={DonwloadIconImg.src} alt="" />
+      <S.BtnCV href="/CV/CVGabrielMachadoCoutinho.pdf" download="GabrielMachadoCoutinho_CV.pdf">
+        <img src={DonwloadIconImg.src} alt="Download icon" />
         <p>CV Download</p>
       </S.BtnCV>
     </>

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import 'swiper/css/pagination'
 import { breakpoints, colors } from '@/app/styles'
 import { ImgContainer } from '../Home/styles'
+import { TagContainer } from '../Tag/styles'
 
 export const CarouselContainer = styled.section`
   text-align: center;
@@ -45,6 +46,10 @@ export const CarouselContainer = styled.section`
       font-size: 28px;
       top: 32px;
     }
+
+    ${TagContainer} {
+      font-size: 0.5rem;
+    }
   }
 `
 
@@ -61,11 +66,19 @@ export const ProjectContainer = styled.div`
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-    bottom: var(--swiper-pagination-bottom, 60px);
+    bottom: var(--swiper-pagination-bottom, 40px);
 
     ${ImgContainer} {
       border: 1px solid ${colors.blue};
     }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    min-height: 105vh;
+
+    .btnProjetos-container {
+    padding-top: 20px;
+  }
   }
 `
 

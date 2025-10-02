@@ -46,7 +46,7 @@ export const CardContainer = styled.div`
     transform: scale(1.12);
     z-index: 9;
 
-    .description {
+    .description, .description-projects-page {
       opacity: 0.7;
       visibility: visible;
     }
@@ -61,7 +61,7 @@ export const CardContainer = styled.div`
     transform: scale(1.22);
     z-index: 10;
 
-    .description {
+    .description, .description-projects-page {
       opacity: 1;
       visibility: visible;
     }
@@ -85,7 +85,7 @@ export const CardContainer = styled.div`
     object-fit: cover;
   }
 
-  .description {
+  .description, .description-projects-page {
     padding: 10px 0;
     opacity: 0;
     visibility: hidden;
@@ -124,11 +124,25 @@ export const CardContainer = styled.div`
     height: 35px;
   }
 
-  @media (max-width: ${breakpoints.desktop}) {
+  @media (max-width: ${breakpoints.tablet}) {
     width: 200px;
 
     img {
       height: 200px;
     }
+
+
+    }
+
+    .description {
+    p {
+      font-size: 0.9rem;
+    }
+
+    h4 {
+      font-size: 0.55rem;
+    }
   }
+
+
 `

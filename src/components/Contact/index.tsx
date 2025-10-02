@@ -15,7 +15,7 @@ const Contact = () => (
         <img src={EmailImg.src} alt="email" />
         <span>gabriel.gmcontato@gmail.com</span>
       </a>
-      <a href="#" target="_blank">
+      <a href="https://wa.link/rw7ypk" target="_blank">
         <img src={PhoneImg.src} alt="whatsapp" />
         (11) 95842-7268
       </a>

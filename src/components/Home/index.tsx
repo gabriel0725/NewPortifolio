@@ -16,7 +16,7 @@ const HomeSection = () => (
       <S.Phrase>Da ideia ao código: criando experiências completas.</S.Phrase>
       <S.ButtonList>
         <li>
-          <a href="#">
+          <a href="https://github.com/gabriel0725" target='_blank'>
             <S.ImgContainer type="black">
               <img src={GithubIconImg.src} alt="github" />
               <p>GitHub</p>
@@ -24,7 +24,7 @@ const HomeSection = () => (
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/gabriel-machado-coutinho-62ab06192" target='_blank'>
             <S.ImgContainer type="blue">
               <img src={LinkedInImg.src} alt="linkedin" />
               <p>LinkedIn</p>

@@ -22,7 +22,7 @@ const Card = ({ image, title, description, tags, links, githubLink, siteLink }: 
             <img className='imgProjectsPage' src={image} alt={title} />
           </a>
         </header>
-        <div className="description">
+        <div className="description-projects-page">
             <a href={githubLink} target='_blank' data-name="Ir para o Github">
             <div>
               <p>{description}</p>

@@ -37,7 +37,7 @@ const projects: Project[] = [
     description:
       "IV Simpósio de Gênero e Diversidade do grupo de pesquisa D'Generus, organizado pela UFPel (Universidade Federal de Pelotas)",
     tags: ['HTML', 'CSS'],
-    githubLink: '',
+
     siteLink: 'https://ivsimposiodgenerus.netlify.app'
   },
   {
@@ -47,7 +47,7 @@ const projects: Project[] = [
     description:
       'Site para um grupo de pesquisadoras da UFPel (Universidade Federal de Pelotas) compartilhar narrativas de mulheres em diferentes contextos ',
     tags: ['HTML', 'CSS'],
-    githubLink: '',
+    
     siteLink: 'https://mulheresdiscursosenarrativas.netlify.app'
   },
   {

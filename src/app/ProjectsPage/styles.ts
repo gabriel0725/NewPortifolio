@@ -24,7 +24,7 @@ export const ProjectsList = styled.ul`
       height: 280px
     }
 
-    .description {
+    .description-projects-page {
       opacity: 0.7;
       visibility: visible;
     }
@@ -35,7 +35,7 @@ export const ProjectsList = styled.ul`
     }
 
     &:hover {
-      .description {
+      .description-projects-page {
         opacity: 1;
       }
 
@@ -55,7 +55,7 @@ export const ProjectsList = styled.ul`
     ${CardContainer} {
       width: 280px;
 
-      .description {
+      .description-projects-page {
         opacity: 1;
       }
 
