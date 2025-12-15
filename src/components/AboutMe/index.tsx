@@ -89,6 +89,21 @@ const AboutMe = () => (
             <li data-name="JAVA">
               <Icon icon="logos:java" width="40" height="40" />
             </li>
+            <li data-name="MONGODB">
+              <Icon icon="skill-icons:mongodb" width="40" height="40" />
+            </li>
+            <li data-name="POSTGRESQL">
+              <Icon icon="skill-icons:postgresql-dark" width="40" height="40" />
+            </li>
+            <li data-name="DOCKER">
+              <Icon icon="skill-icons:docker" width="40" height="40" />
+            </li>
+            <li data-name="SPRING BOOT">
+              <Icon icon="skill-icons:spring-dark" width="40" height="40" />
+            </li>
+            <li data-name="MAVEN">
+              <Icon icon="skill-icons:maven-dark" width="40" height="40" />
+            </li>
           </S.IconsList>
         </div>
       </S.StacksContainer>
