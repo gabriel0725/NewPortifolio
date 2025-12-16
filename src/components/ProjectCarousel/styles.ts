@@ -41,6 +41,16 @@ export const CarouselContainer = styled.section`
     }
   }
 
+  @media (max-width: 1280px) {
+    h3 {
+      top: 40px;
+    }
+
+    ${TagContainer} {
+      font-size: 0.5rem;
+    }
+  }
+
   @media (max-width: ${breakpoints.tablet}) {
     h3 {
       font-size: 28px;
@@ -50,6 +60,24 @@ export const CarouselContainer = styled.section`
     ${TagContainer} {
       font-size: 0.5rem;
     }
+  }
+
+  .btnProjetos {
+    width: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    bottom: var(--swiper-pagination-bottom, 40px);
+
+    ${ImgContainer} {
+      border: 1px solid ${colors.blue};
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+    .btnProjetos-container {
+    padding-top: 20px;
+  }
+  }
   }
 `
 
@@ -61,17 +89,7 @@ export const ProjectContainer = styled.div`
   min-height: 100vh;
   align-content: center;
 
-  .btnProjetos {
-    width: 220px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    bottom: var(--swiper-pagination-bottom, 40px);
 
-    ${ImgContainer} {
-      border: 1px solid ${colors.blue};
-    }
-  }
 
   @media (max-width: ${breakpoints.tablet}) {
     min-height: 105vh;

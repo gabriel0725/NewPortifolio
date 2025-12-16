@@ -19,8 +19,8 @@ const AboutMe = () => (
         </p>
         <br />
         <p>
-          Atualmente, estou finalizando o curso de{' '}
-          <span>Desenvolvedor Fullstack Java na EBAC</span>, o que tem me
+          Recentemente, finalizei o curso profissionalizante de{' '}
+          <span>Desenvolvedor Full Stack Java na EBAC</span>, o que tem me
           permitido aprofundar ainda mais no desenvolvimento de aplicações
           completas, desde o back-end até a interface com o usuário. Meu foco é
           entregar soluções eficientes e bem estruturadas, sempre com a busca

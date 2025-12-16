@@ -54,7 +54,7 @@ const ProjectCarousel = () => {
             768: {
               slidesPerView: 3,
               spaceBetween: 40,
-              
+
             },
             1024: {
               slidesPerView: 5,
@@ -77,7 +77,10 @@ const ProjectCarousel = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="btnProjetos-container">
+<StyledPagination className="swiper-pagination"></StyledPagination>
+      </ProjectContainer>
+
+       <div className="btnProjetos-container">
           <div className="btnProjetos">
             <a href="/ProjectsPage">
               <ImgBtn type="black">
@@ -87,8 +90,6 @@ const ProjectCarousel = () => {
             </a>
           </div>
         </div>
-      </ProjectContainer>
-      <StyledPagination className="swiper-pagination"></StyledPagination>
     </CarouselContainer>
   )
 }
