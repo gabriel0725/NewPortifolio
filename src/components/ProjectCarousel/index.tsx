@@ -80,7 +80,7 @@ const ProjectCarousel = () => {
 <StyledPagination className="swiper-pagination"></StyledPagination>
       </ProjectContainer>
 
-       <div className="btnProjetos-container">
+      <div className="btnProjetos-container">
           <div className="btnProjetos">
             <a href="/ProjectsPage">
               <ImgBtn type="black">

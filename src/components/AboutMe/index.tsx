@@ -98,7 +98,7 @@ const AboutMe = () => (
             <li data-name="DOCKER">
               <Icon icon="skill-icons:docker" width="40" height="40" />
             </li>
-            <li data-name="SPRING BOOT">
+            <li data-name="SPRING FRAMEWORK">
               <Icon icon="skill-icons:spring-dark" width="40" height="40" />
             </li>
             <li data-name="MAVEN">

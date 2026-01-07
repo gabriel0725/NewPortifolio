@@ -9,6 +9,7 @@ import landingImg from '../../assets/img/landing.png'
 import galeriaImg from '../../assets/img/aeolian.jpg'
 import portImg from '../../assets/img/portifolioIMG.png'
 import agendaImg from '../../assets/img/agendaRedux.png'
+import cadastroJava from '../../assets/img/CadastroJava.png'
 
 export type Project = {
   id: number
@@ -17,7 +18,7 @@ export type Project = {
   description: string
   tags: string[]
   githubLink?: string
-  siteLink: string
+  siteLink?: string
 }
 
 const projects: Project[] = [
@@ -47,7 +48,7 @@ const projects: Project[] = [
     description:
       'Site para um grupo de pesquisadoras da UFPel (Universidade Federal de Pelotas) compartilhar narrativas de mulheres em diferentes contextos ',
     tags: ['HTML', 'CSS'],
-    
+
     siteLink: 'https://mulheresdiscursosenarrativas.netlify.app'
   },
   {
@@ -126,6 +127,16 @@ const projects: Project[] = [
     tags: ['HTML', 'CSS', 'PHP'],
     githubLink: 'https://github.com/gabriel0725/estudosCursoBikcraft',
     siteLink: 'https://bikcraftclarkestudo.netlify.app'
+  },
+  {
+    id: 12,
+    image: cadastroJava.src,
+    title: 'Cadastro cliente',
+    description:
+      'Projeto para pratica de Java/Spring, e tambem da arquitetura de microserviços',
+    tags: ['JAVA', 'SPRING', 'Banco de dados', 'microserviços'],
+    githubLink: 'https://github.com/gabriel0725/ProjetoCadastroJava',
+
   }
 ]
 
