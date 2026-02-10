@@ -49,7 +49,7 @@ const projects: Project[] = [
       'Site para um grupo de pesquisadoras da UFPel (Universidade Federal de Pelotas) compartilhar narrativas de mulheres em diferentes contextos ',
     tags: ['HTML', 'CSS'],
 
-    siteLink: 'https://mulheresdiscursosenarrativas.netlify.app'
+    siteLink: 'https://mulheresmemoriasenarrativas.netlify.app'
   },
   {
     id: 4,
