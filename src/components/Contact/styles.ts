@@ -32,21 +32,38 @@ export const ContactContainer = styled.div`
       left: 14px;
     }
 
-    @media (max-width: ${breakpoints.tablet}) {
-      span {
-        padding-left: 30px;
+    @media (max-width: ${breakpoints.desktop}) {
+      img {
+        max-width: 40px;
       }
 
-      img {
-        position: absolute;
-        max-width: 36px;
-        width: 100%;
-        left: 14px;
-      }
-    }
   }
+
+    @media (max-width: ${breakpoints.laptop}) {
+
+        width: 350px;
+
+      img {
+        max-width: 30px;
+      }
+
+  }
+}
 
   @media (max-width: ${breakpoints.tablet}) {
     padding-top: 0;
+
+  span {
+    padding-left: 30px;
   }
+
+  img {
+    position: absolute;
+    max-width: 36px;
+    width: 100%;
+    left: 14px;
+  }
+}
+
+
 `

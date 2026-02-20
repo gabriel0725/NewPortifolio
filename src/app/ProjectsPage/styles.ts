@@ -54,6 +54,14 @@ export const ProjectsList = styled.ul`
     }
   }
 
+  @media (max-width: ${breakpoints.laptop}) {
+    grid-template-columns: repeat(2, 1fr);
+
+    .ProjectListItem {
+      margin-bottom: 40px;
+    }
+  }
+
   @media (max-width: ${breakpoints.tablet}) {
     display: block;
 

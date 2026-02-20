@@ -37,6 +37,18 @@ export const DivContainer = styled.div`
     }
   }
 
+   @media (max-width: ${breakpoints.desktop}) {
+    h3 {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.laptop}) {
+    h3 {
+      font-size: 24px;
+    }
+  }
+
   @media (max-width: ${breakpoints.tablet}) {
     h3 {
       font-size: 28px;

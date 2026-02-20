@@ -41,27 +41,6 @@ export const CarouselContainer = styled.section`
     }
   }
 
-  @media (max-width: 1280px) {
-    h3 {
-      top: 40px;
-    }
-
-    ${TagContainer} {
-      font-size: 0.5rem;
-    }
-  }
-
-  @media (max-width: ${breakpoints.tablet}) {
-    h3 {
-      font-size: 28px;
-      top: 32px;
-    }
-
-    ${TagContainer} {
-      font-size: 0.5rem;
-    }
-  }
-
   .btnProjetos {
     width: 220px;
     left: 50%;
@@ -72,35 +51,101 @@ export const CarouselContainer = styled.section`
     ${ImgContainer} {
       border: 1px solid ${colors.blue};
     }
+  }
 
-    @media (max-width: ${breakpoints.tablet}) {
+  // ===============================
+  // MEDIA QUERIES
+  // ===============================
+
+  @media (max-width: ${breakpoints.desktop}) {
+    h3 {
+      font-size: 30px;
+      top: 20px;
+    }
+
+    ${TagContainer} {
+      font-size: 0.5rem;
+    }
+  }
+
+  @media (max-width: ${breakpoints.laptop}) {
+    h3 {
+      font-size: 24px;
+      top: 20px;
+    }
+
+    .btnProjetos {
+      padding-top: 50px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+
+
+    .btnProjetos {
+      padding-top: 0px;
+    }
+
+    h3 {
+      font-size: 28px;
+      top: 32px;
+    }
+
+    ${TagContainer} {
+      font-size: 0.5rem;
+    }
+
     .btnProjetos-container {
-    padding-top: 20px;
+      padding-top: 20px;
+    }
   }
-  }
-  }
+
 `
 
 export const ProjectContainer = styled.div`
-  max-width: 100vw;
+  max-width: 100%;
   overflow: hidden;
   width: 100%;
   text-align: left;
   min-height: 100vh;
   align-content: center;
 
-
-
   @media (max-width: ${breakpoints.tablet}) {
-    min-height: 105vh;
+    min-height: 80vh;
 
     .btnProjetos-container {
-    padding-top: 20px;
+      padding-top: 20px;
+    }
   }
+
+   @media (max-width: ${breakpoints.laptop}) {
+    min-height: 80vh;
+
+    .btnProjetos-container {
+      padding-top: 20px;
+    }
   }
 `
 
 export const ImgBtn = styled(ImgContainer)`
+
+@media (max-width: ${breakpoints.desktop}) {
+    height: 45px;
+
+
+    p {
+      display: block;
+    }
+  }
+  @media (max-width: ${breakpoints.laptop}) {
+    height: 45px;
+
+
+    p {
+      display: block;
+    }
+  }
+
   @media (max-width: ${breakpoints.tablet}) {
     height: 50px;
 

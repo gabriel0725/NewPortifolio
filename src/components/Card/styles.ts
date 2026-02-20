@@ -12,6 +12,8 @@ export const CardContainer = styled.div`
   text-align: left;
   position: relative;
 
+
+
   a {
     color: ${colors.white};
     position: relative;
@@ -109,6 +111,7 @@ export const CardContainer = styled.div`
       opacity: 0.7;
       font-size: 0.775rem;
     }
+
   }
 
   footer .tags {
@@ -128,51 +131,85 @@ export const CardContainer = styled.div`
     height: 35px;
   }
 
-  @media (max-width: ${breakpoints.desktop}) {
-    .description,
-    .description-projects-page {
-      p {
-        font-size: 1.1rem;
-      }
+@media (max-width: ${breakpoints.desktop}) {
 
-      h4 {
-        font-size: 0.85rem;
-      }
+  width: 200px;
+  height: 350px;
+
+  .description,
+  .description-projects-page {
+    p {
+      font-size: 0.8rem;
     }
 
-    ${TagContainer} {
+    h4 {
+      font-size: 0.7rem;
+    }
+  }
+
+  ${TagContainer} {
+    font-size: 0.75rem;
+  }
+
+    img {
+    height: 200px;
+  }
+}
+
+@media (max-width: ${breakpoints.laptop}) {
+  width: 200px;
+  height: 350px;
+
+  .description,
+  .description-projects-page {
+    p {
+      font-size: 0.8rem;
+    }
+
+    h4 {
+      font-size: 0.7rem;
+    }
+  }
+
+  img {
+    height: 200px;
+  }
+
+  ${TagContainer} {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: ${breakpoints.tablet}) {
+  width: 200px;
+
+  img {
+    height: 200px;
+  }
+
+  .description {
+    p {
+      font-size: 0.9rem;
+    }
+
+    h4 {
+      font-size: 0.55rem;
+    }
+  }
+
+  .description-projects-page {
+    p {
+      font-size: 1rem;
+    }
+
+    h4 {
       font-size: 0.75rem;
     }
   }
 
-  @media (max-width: ${breakpoints.tablet}) {
-    width: 200px;
-
-    img {
-      height: 200px;
-    }
-    .description{
-      p {
-        font-size: 0.9rem;
-      }
-
-      h4 {
-        font-size: 0.55rem;
-      }
-    }
-
-    .description-projects-page {
-      p {
-        font-size: 1rem;
-      }
-
-      h4 {
-        font-size: 0.75rem;
-      }
-    }
-
-    ${TagContainer} {
-      font-size: 0.6rem;
-    }
+  ${TagContainer} {
+    font-size: 0.6rem;
   }
+}
+
 `
