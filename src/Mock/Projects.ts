@@ -10,6 +10,7 @@ import galeriaImg from '../../assets/img/aeolian.jpg'
 import portImg from '../../assets/img/portifolioIMG.png'
 import agendaImg from '../../assets/img/agendaRedux.png'
 import cadastroJava from '../../assets/img/CadastroJava.png'
+import cadastroRawMaterial from '../../assets/img/rawMaterial.png'
 
 export type Project = {
   id: number
@@ -136,8 +137,18 @@ const projects: Project[] = [
       'Projeto para pratica de Java/Spring, e tambem da arquitetura de microserviços',
     tags: ['JAVA', 'SPRING', 'Banco de dados', 'microserviços'],
     githubLink: 'https://github.com/gabriel0725/ProjetoCadastroJava',
-
+  },
+  {
+    id: 13,
+    image: cadastroRawMaterial.src,
+    title: 'Sistema de Planejamento de Produção',
+    description:
+      'Aplicação full stack para gestão de matérias-primas e produtos industriais, com cálculo automatizado da capacidade de produção e priorização por maior valor agregado.',
+    tags: ['SPRING', 'PostgreSQL', 'React', 'Cypress'],
+    githubLink: 'https://github.com/gabriel0725/system-product-rawmaterials',
+    siteLink: 'https://system-product-rawmaterials-hlu56sdry.vercel.app'
   }
+
 ]
 
 export default projects
