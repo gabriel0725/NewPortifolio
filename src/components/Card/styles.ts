@@ -14,6 +14,7 @@ export const CardContainer = styled.div`
 
 
 
+
   a {
     color: ${colors.white};
     position: relative;
@@ -135,6 +136,7 @@ export const CardContainer = styled.div`
 
   width: 200px;
   height: 350px;
+  margin-bottom: 40%;
 
   .description,
   .description-projects-page {
@@ -159,6 +161,7 @@ export const CardContainer = styled.div`
 @media (max-width: ${breakpoints.laptop}) {
   width: 200px;
   height: 350px;
+  margin-bottom: 40%;
 
   .description,
   .description-projects-page {
@@ -182,6 +185,7 @@ export const CardContainer = styled.div`
 
 @media (max-width: ${breakpoints.tablet}) {
   width: 200px;
+  padding-top: 10%;
 
   img {
     height: 200px;

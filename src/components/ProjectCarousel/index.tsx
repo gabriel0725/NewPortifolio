@@ -7,10 +7,10 @@ import 'swiper/css/pagination'
 import Card from '../Card'
 import projects from '@/Mock/Projects'
 import {
+  BtnProjetos,
   CarouselContainer,
   ImgBtn,
-  ProjectContainer,
-  StyledPagination
+  ProjectContainer
 } from './styles'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCoverflow, Keyboard, Pagination } from 'swiper/modules'
@@ -20,9 +20,12 @@ const ProjectCarousel = () => {
   const swiperRef = useRef<any>(null)
 
   return (
+
+
     <CarouselContainer>
       <h3>Projetos</h3>
       <ProjectContainer>
+
         <Swiper
           effect={'coverflow'}
           grabCursor={true}
@@ -53,8 +56,7 @@ const ProjectCarousel = () => {
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 40,
-
+              spaceBetween: 20,
             },
             1024: {
               slidesPerView: 5,
@@ -77,20 +79,20 @@ const ProjectCarousel = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-<StyledPagination className="swiper-pagination"></StyledPagination>
       </ProjectContainer>
-
-      <div className="btnProjetos-container">
-          <div className="btnProjetos">
-            <a href="/ProjectsPage">
-              <ImgBtn type="black">
-                <img src={ProjectsImg.src} alt="projetos" />
-                <p>Projetos</p>
-              </ImgBtn>
-            </a>
-          </div>
-        </div>
+      <BtnProjetos>
+          <a href="/ProjectsPage">
+                <ImgBtn type="black">
+                  <img src={ProjectsImg.src} alt="projetos" />
+                  <p>Projetos</p>
+                </ImgBtn>
+              </a>
+      </BtnProjetos>
     </CarouselContainer>
+
+
+
+
   )
 }
 

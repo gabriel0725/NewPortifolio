@@ -22,6 +22,7 @@ export const CarouselContainer = styled.section`
 
   h3 {
     position: absolute;
+    top: 5%;
     font-weight: bold;
     font-size: 34px;
     letter-spacing: 0.05em;
@@ -29,7 +30,6 @@ export const CarouselContainer = styled.section`
     text-transform: uppercase;
     left: 50%;
     transform: translateX(-50%);
-    top: 120px;
 
     &:after {
       content: '';
@@ -41,17 +41,9 @@ export const CarouselContainer = styled.section`
     }
   }
 
-  .btnProjetos {
-    width: 220px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: relative;
-    bottom: var(--swiper-pagination-bottom, 40px);
 
-    ${ImgContainer} {
-      border: 1px solid ${colors.blue};
-    }
-  }
+
+
 
   // ===============================
   // MEDIA QUERIES
@@ -59,6 +51,7 @@ export const CarouselContainer = styled.section`
 
   @media (max-width: ${breakpoints.desktop}) {
     h3 {
+      position: relative;
       font-size: 30px;
       top: 20px;
     }
@@ -94,13 +87,22 @@ export const CarouselContainer = styled.section`
     ${TagContainer} {
       font-size: 0.5rem;
     }
-
-    .btnProjetos-container {
-      padding-top: 20px;
-    }
   }
 
 `
+
+export const BtnProjetos = styled.div`
+      width: 220px;
+      position: relative;
+      place-self: center;
+      padding-bottom: 2%;
+
+      ${ImgContainer} {
+        border: 1px solid ${colors.blue};
+      }
+`
+
+
 
 export const ProjectContainer = styled.div`
   max-width: 100%;
@@ -112,18 +114,16 @@ export const ProjectContainer = styled.div`
 
   @media (max-width: ${breakpoints.tablet}) {
     min-height: 80vh;
+    padding-bottom: 15%;
+    margin-top: 5%;
 
-    .btnProjetos-container {
-      padding-top: 20px;
-    }
   }
 
-   @media (max-width: ${breakpoints.laptop}) {
+  @media (max-width: ${breakpoints.laptop}) {
     min-height: 80vh;
+    padding-top: 5%;
 
-    .btnProjetos-container {
-      padding-top: 20px;
-    }
+
   }
 `
 
@@ -155,11 +155,4 @@ export const ImgBtn = styled(ImgContainer)`
   }
 `
 
-export const StyledPagination = styled.div`
-  .swiper-pagination-bullet {
-    background: ${colors.blue};
-  }
-  .swiper-pagination-bullet-active {
-    background: ${colors.blue};
-  }
-`
+

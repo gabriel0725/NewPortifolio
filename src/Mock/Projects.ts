@@ -25,12 +25,13 @@ export type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    image: efoodImg.src,
-    title: 'Efood',
-    description: 'Site criado a partir de um layout do Figma como projeto final para o módulo front-end',
-    tags: ['React', 'Styled components', 'RTK Query', 'Typescript'],
-    githubLink: 'https://github.com/gabriel0725/E-food',
-    siteLink: 'https://e-food-orpin.vercel.app'
+    image: cadastroRawMaterial.src,
+    title: 'Sistema de Planejamento de Produção',
+    description:
+      'Aplicação full stack para gestão de matérias-primas e produtos industriais, com cálculo automatizado da capacidade de produção e priorização por maior valor agregado.',
+    tags: ['SPRING', 'PostgreSQL', 'React', 'JUnit'],
+    githubLink: 'https://github.com/gabriel0725/system-product-rawmaterials',
+    siteLink: 'https://system-product-rawmaterials-hlu56sdry.vercel.app'
   },
   {
     id: 2,
@@ -140,13 +141,12 @@ const projects: Project[] = [
   },
   {
     id: 13,
-    image: cadastroRawMaterial.src,
-    title: 'Sistema de Planejamento de Produção',
-    description:
-      'Aplicação full stack para gestão de matérias-primas e produtos industriais, com cálculo automatizado da capacidade de produção e priorização por maior valor agregado.',
-    tags: ['SPRING', 'PostgreSQL', 'React', 'Cypress'],
-    githubLink: 'https://github.com/gabriel0725/system-product-rawmaterials',
-    siteLink: 'https://system-product-rawmaterials-hlu56sdry.vercel.app'
+    image: efoodImg.src,
+    title: 'Efood',
+    description: 'Site criado a partir de um layout do Figma como projeto final para o módulo front-end',
+    tags: ['React', 'Styled components', 'RTK Query', 'Typescript'],
+    githubLink: 'https://github.com/gabriel0725/E-food',
+    siteLink: 'https://e-food-orpin.vercel.app'
   }
 
 ]

@@ -7,13 +7,16 @@ import { breakpoints } from '../styles'
 import { TagContainer } from '@/components/Tag/styles'
 
 export const AllProjectsSection = styled(Section)`
-  padding: 60px 0;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 80px;
 `
 
 export const ProjectsList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+
 
   .ProjectListItem {
     margin: 60px 0;
@@ -47,27 +50,26 @@ export const ProjectsList = styled.ul`
   }
 
   @media (max-width: ${breakpoints.desktop}) {
-    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 0;
+    ${CardContainer} {
 
-    .ProjectListItem {
-      margin-bottom: 40px;
+    .imgProjectsPage{
+      height: 200px
     }
   }
+}
 
-  @media (max-width: ${breakpoints.laptop}) {
-    grid-template-columns: repeat(2, 1fr);
 
-    .ProjectListItem {
-      margin-bottom: 40px;
-    }
-  }
 
   @media (max-width: ${breakpoints.tablet}) {
-    display: block;
+
+    grid-template-columns: repeat(1, 1fr);
+    
 
     .ProjectListItem {
-      margin-bottom: 130px;
+      margin: 0px 0;
     }
+
 
     ${CardContainer} {
       width: 280px;
