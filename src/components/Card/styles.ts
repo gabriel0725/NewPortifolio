@@ -6,8 +6,8 @@ import { TagContainer } from '../Tag/styles'
 export const CardContainer = styled.div`
   background-color: transparent;
   border-radius: 8px;
-  width: 280px;
-  height: 380px;
+  width: 250px;
+ 
   transition: transform 0.4s;
   text-align: left;
   position: relative;
@@ -85,7 +85,7 @@ export const CardContainer = styled.div`
   img {
     border-radius: 10px;
     width: 100%;
-    height: 280px;
+    height: 250px;
     box-shadow: 0 0 0 transparent;
     transition: box-shadow 0.3s ease;
     object-fit: cover;

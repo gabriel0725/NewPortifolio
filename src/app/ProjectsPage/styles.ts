@@ -4,7 +4,6 @@ import { CardContainer } from '@/components/Card/styles'
 import Section from '@/components/Section'
 import styled from 'styled-components'
 import { breakpoints } from '../styles'
-import { TagContainer } from '@/components/Tag/styles'
 
 export const AllProjectsSection = styled(Section)`
   position: relative;
@@ -15,17 +14,15 @@ export const AllProjectsSection = styled(Section)`
 export const ProjectsList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  column-gap: 60px;
+  row-gap: 45px;
 
-
-  .ProjectListItem {
-    margin: 60px 0;
-  }
+ 
 
   ${CardContainer} {
 
     .imgProjectsPage{
-      height: 280px
+      width: 280px;
     }
 
     .description-projects-page {

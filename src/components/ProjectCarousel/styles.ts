@@ -21,8 +21,9 @@ export const CarouselContainer = styled.section`
   }
 
   h3 {
-    position: absolute;
-    top: 5%;
+    position: relative;
+    padding-top: 2%;
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: 34px;
     letter-spacing: 0.05em;
@@ -96,6 +97,7 @@ export const BtnProjetos = styled.div`
       position: relative;
       place-self: center;
       padding-bottom: 2%;
+      margin-top: 20px;
 
       ${ImgContainer} {
         border: 1px solid ${colors.blue};
@@ -128,6 +130,8 @@ export const ProjectContainer = styled.div`
 `
 
 export const ImgBtn = styled(ImgContainer)`
+
+height: 45px;
 
 @media (max-width: ${breakpoints.desktop}) {
     height: 45px;
