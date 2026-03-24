@@ -84,7 +84,7 @@ const ProjectCarousel = () => {
           <a href="/ProjectsPage">
                 <ImgBtn type="black">
                   <img src={ProjectsImg.src} alt="projetos" />
-                  <p>Projetos</p>
+                  <p>Todos os Projetos</p>
                 </ImgBtn>
               </a>
       </BtnProjetos>

@@ -7,7 +7,7 @@ import { ContactContainer } from './styles'
 const Contact = () => (
   <Section background="gray" title={'Entre em contato'}>
     <ContactContainer>
-      <a href="https:wa.link/c7jmrq" target="_blank">
+      <a href="https://wa.link/c7jmrq" target="_blank">
         <img src={PhoneImg.src} alt="whatsapp" />
         (11) 96861-1732
       </a>

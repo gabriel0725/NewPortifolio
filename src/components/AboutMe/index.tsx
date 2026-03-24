@@ -4,7 +4,6 @@ import * as S from './styles'
 
 import DonwloadIconImg from '../../../assets/img/download_icon.png'
 
-
 const AboutMe = () => (
   <S.SectionAbout background="gray" title="Sobre mim">
     <>
@@ -12,15 +11,20 @@ const AboutMe = () => (
         <p>
           Olá! Meu nome é <span>Gabriel</span>, sou formado em{' '}
           <span>Análise e Desenvolvimento de Sistemas</span> pela{' '}
-          <span>Universidade Anhembi Morumbi (UAM)</span> . Embora não atue
-          integralmente na área de tecnologia, já tive a oportunidade de
-          trabalhar em alguns projetos como <span>freelancer</span>, onde pude
-          aplicar e expandir meus conhecimentos.
+          <span>Universidade Anhembi Morumbi (UAM)</span>. Atuo como{' '}
+          <span>desenvolvedor full stack freelancer</span>, desenvolvendo
+          aplicações web e plataformas digitais sob demanda, incluindo sites
+          para eventos acadêmicos e projetos com impacto social. Tenho
+          experiência na construção de soluções completas, desde a interface até
+          o back-end, utilizando{' '}
+          <span>Java, Spring Boot, React, JavaScript</span> e integração com
+          APIs, sempre com foco em boas práticas, organização de dados e
+          qualidade de código.
         </p>
         <br />
         <p>
           Recentemente, finalizei o curso profissionalizante de{' '}
-          <span>Desenvolvedor Full Stack Java na EBAC</span>, o que tem me
+          <span>Desenvolvedor Full Stack Java</span> na <span>EBAC</span>, o que tem me
           permitido aprofundar ainda mais no desenvolvimento de aplicações
           completas, desde o back-end até a interface com o usuário. Meu foco é
           entregar soluções eficientes e bem estruturadas, sempre com a busca
@@ -107,7 +111,10 @@ const AboutMe = () => (
           </S.IconsList>
         </div>
       </S.StacksContainer>
-      <S.BtnCV href="/CV/CVGabrielMachadoCoutinho.pdf" download="GabrielMachadoCoutinho_CV.pdf">
+      <S.BtnCV
+        href="/CV/CVGabrielMachadoCoutinho.pdf"
+        download="GabrielMachadoCoutinho_CV.pdf"
+      >
         <img src={DonwloadIconImg.src} alt="Download icon" />
         <p>CV Download</p>
       </S.BtnCV>

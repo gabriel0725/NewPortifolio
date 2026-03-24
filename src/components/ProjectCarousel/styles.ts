@@ -97,8 +97,14 @@ export const BtnProjetos = styled.div`
       place-self: center;
       padding-bottom: 2%;
 
+
       ${ImgContainer} {
         border: 1px solid ${colors.blue};
+        gap: 0;
+
+        p {
+          margin-right: 20px;
+        }
       }
 `
 
